@@ -21,6 +21,5 @@ public class EmployeeScheduler
 @Scheduled(fixedRate = 100000)
 public void task(){
     log.info("Employee task is running for 1 minute.");
-
 }
 }
