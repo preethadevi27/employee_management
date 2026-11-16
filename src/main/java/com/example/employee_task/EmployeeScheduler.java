@@ -12,5 +12,10 @@ public class EmployeeScheduler
  @Scheduled(fixedRate = 2000)
  public void runTask(){
      log.info("Employee task is running.");
+
  }
+@Scheduled(fixedDelay = 4000)
+    public void runDelayMessage(){
+     log.info("Employee task is delayed...");
+}
 }
