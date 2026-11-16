@@ -18,9 +18,5 @@ public class EmployeeScheduler
     public void runDelayMessage(){
      log.info("Employee task is delayed...");
 }
-@Scheduled(fixedRate = 100000)
-public void task(){
-    log.info("Employee task is running successfully.");
 
-}
 }
