@@ -19,8 +19,11 @@ public class EmployeeScheduler
      log.info("Employee task is delayed...");
 }
 @Scheduled(fixedRate = 100000)
-public void task(){
-    log.info("Employee task is running successfully.");
-
+public void task() {
+    log.info("Employee task is running for 1 minute.");
+}
+@Scheduled(cron = "0 0 9 * * *", zone = "Asia/Kolkata")
+public void runDailyTask() {
+    System.out.println("Executing scheduled task...");
 }
 }
